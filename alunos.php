@@ -1,9 +1,5 @@
 <?php 
-    $host = 'mysql:host=localhost;dbname=escola;port=3307';
-    $user = 'root';
-    $pass = '';
-
-    $db = new PDO($host,$user,$pass);
+    include_once('config/conexao.php');
 
     $query = $db->query('SELECT * from alunos');
     $alunos = $query->fetchALL(PDO::FETCH_ASSOC);

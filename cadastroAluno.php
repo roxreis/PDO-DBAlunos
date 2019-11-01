@@ -13,4 +13,5 @@
 
     $resultado = $query->execute(["nome"=>$nomeAluno,"ra"=>$raAluno,"curso_id"=>$cursoId]);
 
-    var_dump($resultado);
+
+?>
